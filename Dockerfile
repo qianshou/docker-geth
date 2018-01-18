@@ -15,6 +15,8 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
 
 RUN mkdir /var/local/blockchain-nodes
 
+WORKDIR /var/local/blockchain-nodes
+
 VOLUME ["/var/local/blockchain-nodes"]
 
 EXPOSE 8545 30303
