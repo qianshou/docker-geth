@@ -13,8 +13,4 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
 	apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN mkdir /var/local/blockchain-nodes
-
-VOLUME ["/var/local/blockchain-nodes","/root/.ethereum"]
-
 EXPOSE 8545 30303
