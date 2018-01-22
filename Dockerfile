@@ -10,6 +10,8 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
 	add-apt-repository -y ppa:ethereum/ethereum && \
 	apt-get update && \
 	apt-get -y install ethereum && \
+	apt-get -y install net-tools && \
+	apt-get -y install telnet && \
 	apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
